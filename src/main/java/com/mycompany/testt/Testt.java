@@ -10,7 +10,7 @@ package com.mycompany.testt;
  */
 public class Testt {
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         // Creating authors
         Author author1 = new Author("George Orwell");
         Author author2 = new Author("Aldous Huxley");
@@ -71,7 +71,8 @@ class Library {
     }
 
     public void listBooks() {
-        for (Book book : books) {
+        for (int i = 0; i < books.size(); i++) {
+            Book book = books.get(i);
             System.out.println("Title: " + book.getTitle() + ", Author: " + book.getAuthor().getName());
         }
     }
